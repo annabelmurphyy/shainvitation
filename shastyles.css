@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.invitation {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+.invitation-heading {
+    text-align: center;
+    color: #333333;
+    margin-bottom: 10px;
+    animation: slideIn 2s ease-in-out;
+}
+
+.event-name {
+    text-align: center;
+    color: #ff5733; /* Custom color for the event name */
+    margin-bottom: 20px;
+    font-size: 24px;
+    animation: slideIn 2s ease-in-out;
+}
+
+.details {
+    animation: slideIn 2s ease-in-out;
+}
+
+.details p {
+    margin: 10px 0;
+    color: #333333;
+    font-size: 18px;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
